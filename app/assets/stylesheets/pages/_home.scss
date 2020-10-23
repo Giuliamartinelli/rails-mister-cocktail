@@ -6,6 +6,11 @@ h3 {
   color: #832161;
   font-weight: bold;
 }
+h4 {
+  color: #832161;
+  font-weight: bold;
+}
+
 h5 {
   color:white;
 }
@@ -14,8 +19,19 @@ body {
   background-color: #1f1a19;
 }
 .btn {
+  height: 40px;
   color: white;
   background-color: #832161;
+  width: 140px;
+  border-radius: 5px;
+}
+.btn :hover {
+  height: 40px;
+  color: white;
+  background-color: #832161;
+}
+.card .btn {
+  width: 120px;
 }
   .banner {
     background-size: cover;
@@ -36,10 +52,7 @@ body {
 
     }
   }
-  .container {
-  .row {
+
     .card {
       background-color: #FBEFF7;
     }
-  }
-}

@@ -1,16 +1,16 @@
 <% if @cocktail.photo.attached? %>
   <div class="banner mb-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @cocktail.photo.key, height: 200, width: 400, crop: :fill %>')">
 <% else%>
-<div class="banner mb-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://picsum.photos/200/400)">
+<div class="banner mb-1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1565227299424-15ff889d9f2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80)">
 <% end %>
-
-
-
   <div class="container">
     <h1><%= @cocktail.name %></h1>
     <%= link_to "new dose", new_cocktail_dose_path(@cocktail), class: "btn"; %>
   </div>
 </div>
+
+
+
 <div class="container" style=" padding: 16px;">
   <div class="row" style="padding: 16px;">
     <% @cocktail.doses.each do |dose| %>
@@ -26,6 +26,7 @@
     <% end %>
   </div>
 </div>
+
 <div class="footer d-flex align-items-center justify-content-center">
 <%= link_to "back", cocktails_path, class: "btn m-3"%>
 <%= link_to "new cocktail", new_cocktail_path, class: "btn m-3"%>
