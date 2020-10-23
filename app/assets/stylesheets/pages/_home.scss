@@ -1,6 +1,22 @@
 // Specific CSS for your home-page
+.border {
+  color: #832161;
+}
+h3 {
+  color: #832161;
+  font-weight: bold;
+}
+h5 {
+  color:white;
+}
 
-
+body {
+  background-color: #1f1a19;
+}
+.btn {
+  color: white;
+  background-color: #832161;
+}
   .banner {
     background-size: cover;
   background-position: center;
@@ -23,7 +39,7 @@
   .container {
   .row {
     .card {
-
+      background-color: #FBEFF7;
     }
   }
 }

@@ -1,5 +1,8 @@
+<div class="container">
 <%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description %>
-  <%= f.input :ingredient_id, collection: @ingredients %>
-  <%= f.button :submit %>
+  <h5><%= f.input :description %></h5>
+  <h5>Select the ingredient</h5>
+  <%= f.input :ingredient_id, collection: @ingredients, style: "color: white;" %>
+  <%= f.button :submit, class: "btn" %>
 <% end %>
+</div>

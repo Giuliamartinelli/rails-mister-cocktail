@@ -8,7 +8,7 @@
 
   <div class="container">
     <h1><%= @cocktail.name %></h1>
-    <%= link_to "new dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary"; %>
+    <%= link_to "new dose", new_cocktail_dose_path(@cocktail), class: "btn"; %>
   </div>
 </div>
 <div class="container" style=" padding: 16px;">
@@ -16,16 +16,17 @@
     <% @cocktail.doses.each do |dose| %>
     <div class="col-4 my-3" style="width: 18rem;">
       <div class="card">
-        <h3><%= dose.ingredient.name %></h3>
+        <h3 class="text-center p-3 border"><%= dose.ingredient.name %></h3>
         <div class="description p-3 d-flex align-items-center justify-content-between ">
           <%= dose.description %>
-          <%= link_to "Delete", dose_path(dose), method: :delete,data: { confirm: "Are you sure?" } %>
+          <%= link_to "Delete", dose_path(dose), method: :delete,data: { confirm: "Are you sure?" }, class: "btn" %>
         </div>
       </div>
     </div>
     <% end %>
   </div>
 </div>
-
-<%= link_to "back", cocktails_path %>
-<%= link_to "new cocktail", new_cocktail_path %>
+<div class="footer d-flex align-items-center justify-content-center">
+<%= link_to "back", cocktails_path, class: "btn m-3"%>
+<%= link_to "new cocktail", new_cocktail_path, class: "btn m-3"%>
+</div>

@@ -1,11 +1,11 @@
 
-  <div class="banner mb-1" style="width: cover; height: 400px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://picsum.photos/1200/300);">
+  <div class="banner mb-1" style="width: cover; height: 400px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1565227299424-15ff889d9f2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80);">
     <div class="container">
-      <h1>Fancy Cocktails</h1>
+      <h1>Mortal Cocktails</h1>
       <%= link_to "new cocktail", new_cocktail_path, class: "btn btn-primary"; %>
     </div>
   </div>
-  <div class="container" style=" padding: 16px;">
+  <div class="container" style=" padding: 16px; background-color: #1f1a19;">
   <div class="row" style="padding: 16px;">
     <% @cocktails.each do |cocktail| %>
     <div class="col-4 my-3" style="width: 18rem;">
